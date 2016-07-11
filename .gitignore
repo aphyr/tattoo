@@ -3,6 +3,8 @@
 /checkouts
 pom.xml
 pom.xml.asc
+*.swp
+~*
 *.jar
 *.log
 *.class

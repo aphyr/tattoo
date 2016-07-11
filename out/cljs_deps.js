@@ -1,7 +1,9 @@
 goog.addDependency("base.js", ['goog'], []);
 goog.addDependency("../snapsvg.inc.js", ['cljsjs.snapsvg'], []);
 goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.object', 'goog.string.StringBuffer', 'goog.array']);
-goog.addDependency("../tattoo/core.js", ['tattoo.core'], ['cljsjs.snapsvg', 'cljs.core']);
+goog.addDependency("../tattoo/tree.js", ['tattoo.tree'], ['cljs.core']);
+goog.addDependency("../tattoo/geometry.js", ['tattoo.geometry'], ['cljs.core']);
+goog.addDependency("../tattoo/core.js", ['tattoo.core'], ['cljsjs.snapsvg', 'cljs.core', 'tattoo.tree', 'tattoo.geometry']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
 goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);

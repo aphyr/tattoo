@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48"
+   height="48"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="standard-model.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3839"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3841" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="40.066258"
+     inkscape:cy="32.797273"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="2318"
+     inkscape:window-height="1781"
+     inkscape:window-x="1278"
+     inkscape:window-y="56"
+     inkscape:window-maximized="0"
+     showborder="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3819"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1004.3622)">
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-linejoin:bevel;stroke-opacity:1"
+       id="path6447"
+       sodipodi:sides="3"
+       sodipodi:cx="25"
+       sodipodi:cy="23"
+       sodipodi:r1="13.892444"
+       sodipodi:r2="6.9462218"
+       sodipodi:arg1="2.6179939"
+       sodipodi:arg2="3.6651914"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 12.968791,29.946222 25,9.1075563 37.031209,29.946222 z"
+       transform="matrix(1.5835948,0,0,1.5835948,-14.621079,990.93952)"
+       inkscape:transform-center-y="-5.5000019" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7683"
+       style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TeX Gyre Bonum;-inkscape-font-specification:TeX Gyre Bonum"
+       transform="translate(0,1004.3622)"><flowRegion
+         id="flowRegion7685"><rect
+           id="rect7687"
+           width="69.473244"
+           height="46.138718"
+           x="-192.50983"
+           y="-123.82695" /></flowRegion><flowPara
+         id="flowPara7689">antiparticlesantianti</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot7707"
+       style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:TeX Gyre Bonum;-inkscape-font-specification:TeX Gyre Bonum"
+       transform="translate(0,1004.3622)"><flowRegion
+         id="flowRegion7709"><rect
+           id="rect7711"
+           width="61.518291"
+           height="25.455845"
+           x="-180.13545"
+           y="-62.838989" /></flowRegion><flowPara
+         id="flowPara7713" /></flowRoot>    <g
+       id="g7772"
+       transform="translate(155,2.9999)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7768"
+         d="m -135,1048.3623 4,-5 -4,-5"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path7770"
+         d="m -125,1038.3623 -4,5 4,5"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

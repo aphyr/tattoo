@@ -1,4 +1,5 @@
-(ns tattoo.geometry)
+(ns tattoo.geometry
+  (:require [clojure.set :as set]))
 
 (defn log [& args]
   (.apply js/console.log js/console (clj->js args))
@@ -36,6 +37,33 @@
     {:x (:cx b)
      :y (:cy b)}))
 
+(defn poly-edges
+  "Turns a polygon (a sequence of vertices) into a sequence of cartesian line
+  segments."
+  [poly]
+  (->> poly
+       (concat (list (last poly)))
+       (partition 2 1)))
+
+(defn poly-glue
+  "Takes two polygons sharing a single face and stitches them together into a
+  single polygon."
+  [a b]
+  (let [seam (set/intersection (set a) (set b))]
+    (assert (= 2 (count seam)))
+    (let [a' (->> (cycle a)
+                  ; Advance until we're in the seam
+                  (drop-while (complement seam))
+                  ; Advance until we're *no longer* on the seam
+                  (drop-while seam)
+                  ; Take the path up to the first seam node
+                  (take (dec (count a))))
+          b' (->> (cycle b)
+                  (drop-while (complement seam))
+                  (drop-while seam)
+                  (take (dec (count b))))]
+      (concat a' b'))))
+
 (defn point-line-distance
   "Yields the distance from a point to a cartesian line."
   [point [a b]]
@@ -64,6 +92,31 @@
             v (- (* x3 y4) (* y3 x4))]
         {:x (/ (- (* u (- x3 x4)) (* (- x1 x2) v)) denom)
          :y (/ (- (* u (- y3 y4)) (* (- y1 y2) v)) denom)}))))
+
+(defn segment-intersection
+  "Returns intersection of two cartesian line segments, or nil if they do not
+  intersect."
+  [a b]
+  (log :a (pr-str a) :b (pr-str b))
+  (let [i (intersection a b)]
+    (log :intersection i)
+    (when (<= (first a) (first i) (first b) i))))
+
+(defn point-in-poly?
+  "Given a cartesian point and a cartesian polygon (a sequence of cartesian
+  points), returns whether the point is in the polygon.
+
+  Gonna do the inexact ray-casting algorithm here because we're not concerned
+  with points on edges."
+  [point poly]
+  (log :point-in-poly (pr-str [(:x point) (:y point)]) (pr-str poly))
+  ; Cast ray in +y
+  (let [ray [(select-keys point [:x :y]) {:x (:x point) :y 100000}]]
+    (->> (poly-edges poly)
+         (keep (partial segment-intersection ray))
+         (log :intersections)
+         count
+         odd?)))
 
 (defn cart->polar
   "Takes a pair of points [{:x :y} {:x :y}] and yields a polar line segment

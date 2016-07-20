@@ -225,8 +225,8 @@
   "Resets scene."
   []
   (.clear svg)
-  (init! svg save '(approx= alpha
-                            (div (* k (pow e 2)) (* hbar c))
-                            (oct 2 1 1))))
+  (init! svg save '(= alpha-1
+                      (approx-oct 2 1 1)
+                      (div (* hbar c) (* k (pow e 2))))))
 
 (refresh!)

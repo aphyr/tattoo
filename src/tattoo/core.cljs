@@ -221,12 +221,14 @@
                         (clj->js {:type "text/svg;charset=utf-8"}))
               "tattoo.svg")))))
 
+(def alpha '(= alpha-1
+               (approx-oct 2 1 1)
+               (div (* hbar c) (* k (pow e 2)))))
+
 (defn refresh!
   "Resets scene."
   []
   (.clear svg)
-  (init! svg save '(= alpha-1
-                      (approx-oct 2 1 1)
-                      (div (* hbar c) (* k (pow e 2))))))
+  (init! svg save '(= (* 6 2) (oct 1 4))))
 
 (refresh!)
